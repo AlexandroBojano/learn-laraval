@@ -1,0 +1,46 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px 100% 100px;
+    grid-template-areas: "Sidebar Header"
+    "Sidebar Main"
+    "Sidebar Footer";
+}
+
+header{
+    grid-area: Header;
+    background-color: red;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+}
+.header {
+   display: flex;    
+   justify-content: space-between;
+}
+main {
+    grid-area: Mian;
+    background-color: blue;
+}
+
+footer {
+    grid-area: Footer;
+    background-color: yellow;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
